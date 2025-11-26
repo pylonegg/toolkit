@@ -20,7 +20,7 @@ def config_get(key: str):
     typer.echo(f"{key} = {value}")
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-CONFIG_PATH = os.path.join(ROOT_DIR,"../","config.json")
+CONFIG_PATH = os.path.join(ROOT_DIR,"config.json")
 
 def load_config():
     if os.path.exists(CONFIG_PATH):

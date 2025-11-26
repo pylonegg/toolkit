@@ -1,5 +1,5 @@
 import os, time, csv, logging
-from pylonegg.azure.client import blob_service_client
+from pylonegg.client import blob_service_client
 from pylonegg.config import load_config
 
 # --- Reconcile Blobs --------------------

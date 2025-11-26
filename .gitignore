@@ -1,3 +1,4 @@
 __pycache__
-/config.json
+pylonegg/config.json
 pylonegg.egg-info
+/log.txt
