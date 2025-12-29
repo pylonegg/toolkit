@@ -6,21 +6,18 @@ I’ll break it into core entities, then supporting areas, and finally optional 
 
 1. Core Tables (People, You, Time)
 
-Person
+## Person
 
-Stores everyone in your life (including yourself).
-
-Field	Type	Notes
-person_id	PK	Unique ID
-first_name	Text	
-last_name	Text	Optional
-nickname	Text	
-date_of_birth	Date	Optional
-notes	Text	General notes
+create table Person (
+person_id	 int not null,
+first_name	varchar(100) not null,
+last_name	 varchar(100) null,
+nickname		varchar(100) null,
+date_of_birth	Date	null,
+notes	 varchar(max) null,
 created_at	DateTime	
+)
 
-
-⸻
 
 Relationship
 
@@ -35,9 +32,6 @@ start_date	Date
 end_date	Date	Nullable
 notes	Text	
 
-👉 One person can have multiple relationship records over time.
-
-⸻
 
 Event
 
